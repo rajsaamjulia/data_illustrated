@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Plainpalais</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <link rel="stylesheet" type="text/css" href="mystyle03.css">
+    <link rel="stylesheet" href="jquery_ui/jquery-ui.min.css">
+    <script src="jquery_ui/external/jquery/jquery.js"></script>
+    <script src="jquery_ui/jquery.ui.touch-punch.min.js"></script>
+    <script src="jquery_ui/jquery-ui.min.js"></script>
+</head>
+    <body>
+        <h1>Champel</h1>
+        <div id="explanation">
+            <h3></h3>
+            <button id="information">See more information</button>
+            <button id="less_information">See less information</button>
+        </div>
+
+
+
+        <br>
+        <div id="workspace">
+            <!--border="10"-->
+            <img id="img_champel" src="jquery_ui/images/pictures/champel_web_ill.jpg"  alt="" style="width: 951px;  ">
+            <img id="info_champel" src="jquery_ui/images/pictures/champel_web_data.png"  alt="" style="width: 951px;  ">
+
+
+        </div>
+
+        <a id="return" href="map.html">
+            <p>Go back to the map </p>
+        </a>
+
+        <br>
+
+
+
+        <script type="text/javascript">
+         $( "#info_champel" ).hide();
+
+        var selectedEffect = "fade";
+
+
+
+          $( function() {
+                // run the currently selected effect
+                function runEffect() {
+                  // get effect type from
+                  var selectedEffect = "fade";
+
+                  // Most effect types need no options passed by default
+
+
+                  // Run the effect
+                  $( "#info_champel" ).hide( selectedEffect,  1000);
+                };
+
+                    function callback() {
+                      /*setTimeout(function() {
+                    $( "#info_plainpalais" ).removeAttr( "style" ).hide().fadeIn();
+                      }, 1000 );*/
+                    };
+
+                    // Set effect from select menu value
+                $( "#information" ).on( "click", function() {
+                    $("#info_champel").show(selectedEffect,  1000);
+
+                });
+                $( "#less_information" ).on( "click", function() {
+                    runEffect();
+                });
+
+          } );
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+body {
+	background-color: transparent;
+	background-size: 1750px;
+	/*height: 1700px;*/
+	/* snow, linen, seashell, blanchedalmond*/
+	background-color: white;
+	background-repeat: no-repeat;
+
+}
+h1 {
+	font-family: Alegreya Sans, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align:center;
+	color: dimgrey;
+}
+h2 {
+	font-family: Alegreya Sans, sans-serif;
+	font-size: 25px;
+	text-align:center;
+	color: black;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20.4px;
+	font-variant: normal;
+
+}
+h3 {
+	font-family: Alegreya Sans, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+	text-align:center;
+
+}
+p {
+	font-family: Open Sans, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	underline: none;
+}
+
+button{
+	border: 2px solid #F3F3F3;
+	border-radius: 5 px;
+	background-color: white;
+	font-family: Open Sans, sans-serif;
+}
+
+#information {
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#return {
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+textarea {
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 40em;
+}
+
+#cityview {
+	/*position: absolute;*/
+
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 900px;
+  	/*width: 30em;*/
+
+}
+
+#img_plainpalais, #img_champel, #img_prairie {
+	position: absolute;
+	left: 200px;
+	z-index: 1;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	/*width: 30em;*/
+  	/*overflow: hidden;*/
+}
+
+#info_plainpalais, #info_champel, #info_prairie {
+	position: absolute;
+	left: 200px;
+	z-index: 2;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	/*visibility: hidden;*/
+}
+
+#plainpalais {
+	background-color: none;
+	position: absolute;
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+	left: 560px;
+	top: 380px;
+	width: 50px;
+	height: 70px;
+	color: red;
+	z-index: 2;
+}
+
+#prairie {
+	background-color: none;
+	position: absolute;
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+	left: 500px;
+	top: 250px;
+	width: 50px;
+	height: 70px;
+	color: red;
+	z-index: 2;
+}
+
+#champel {
+	background-color: none;
+	position: absolute;
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+	left: 680px;
+	top: 530px;
+	width: 50px;
+	height: 70px;
+	color: red;
+	z-index: 2;
+
+/*.button {
+    background-color: lightgrey;
+    border: none;
+    color: grey;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;
+    font-size: 20px;
+    border-radius: 100%;
+}*/
+
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
